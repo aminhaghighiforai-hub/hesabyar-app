@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065" />
+      <stop offset="50%" stop-color="#581c87" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Inner subtle border -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6" />
+
+  <!-- Main Accounting Ledger & Balance Icon (Centered in 80% safe zone) -->
+  <g filter="url(#shadow)" transform="translate(96, 96)">
+    <!-- Ledger Base Card -->
+    <rect x="20" y="20" width="280" height="280" rx="36" fill="#ffffff" fill-opacity="0.95" />
+    
+    <!-- Top Bar of Card -->
+    <path d="M20 56 C20 36.1 36.1 20 56 20 L264 20 C283.9 20 300 36.1 300 56 L300 80 L20 80 Z" fill="#6d28d9" />
+    
+    <!-- 3 decorative dots in header -->
+    <circle cx="50" cy="50" r="8" fill="#f87171" />
+    <circle cx="74" cy="50" r="8" fill="#fbbf24" />
+    <circle cx="98" cy="50" r="8" fill="#34d399" />
+    
+    <!-- Scale / Accounting T-Account Symbols -->
+    <!-- Center pole -->
+    <rect x="154" y="110" width="12" height="150" rx="6" fill="#4c1d95" />
+    <rect x="120" y="250" width="80" height="16" rx="8" fill="#4c1d95" />
+    
+    <!-- Horizontal beam -->
+    <rect x="80" y="130" width="160" height="10" rx="5" fill="#4c1d95" />
+    <circle cx="160" cy="135" r="10" fill="url(#gold)" />
+    
+    <!-- Left Pan (Debit) -->
+    <path d="M85 140 L70 190 L120 190 Z" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linejoin="round" />
+    <path d="M60 190 Q95 210 130 190 Z" fill="#7c3aed" />
+
+    <!-- Right Pan (Credit) -->
+    <path d="M235 140 L220 190 L270 190 Z" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linejoin="round" />
+    <path d="M210 190 Q245 210 280 190 Z" fill="#7c3aed" />
+  </g>
+</svg>
